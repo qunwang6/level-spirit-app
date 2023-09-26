@@ -430,7 +430,7 @@ async function switchMenu() {
             // do nothing special if granted
         } else {
             let warnTXT = document.querySelector(".cltxt");
-            warnTXT.innerHTML = "You have denied permission, so this app wont work. 😢<br><br>To give permission force-close your browser and try again."
+            warnTXT.innerHTML = "You have denied permission, so this app wont work. 😢<br><br>To give permission force-close your app and try again."
             supWarn.style.display = "inline";
         }
     }
