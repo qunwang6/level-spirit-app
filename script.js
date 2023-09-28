@@ -424,8 +424,8 @@ function switchCal() {
 async function switchMenu() {
 
     //ask for permission on iOS
-    if (DeviceOrientationEvent && typeof (DeviceOrientationEvent.requestPermission) === "function") {
-        const permissionState = await DeviceOrientationEvent.requestPermission();
+    if (DeviceMotionEvent && typeof (DeviceMotionEvent.requestPermission) === "function") {
+        const permissionState = await DeviceMotionEvent.requestPermission();
         if (permissionState === "granted") {
             // do nothing special if granted
         } else {
